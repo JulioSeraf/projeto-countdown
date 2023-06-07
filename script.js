@@ -1,3 +1,4 @@
+// variaveis-------------------------------------------------------------------------------------------------------------------
 const iday = document.getElementById('iday');
 const hours = document.getElementById('ihours');
 const minutes = document.getElementById('iminutes');
@@ -9,6 +10,11 @@ let segundTotal = 59;
 let minutesTotal = 59;
 let hoursTotal = 23;
 let dayTotal = 8;
+
+
+// funtiones de cambio de estilo caja de numeros--------------------------------------------------------------------------------
+
+
 function cambioColor(nu){
     topColor[nu].style.cssText ='transform: translateY(100%);' + ' transition: 1s all;'+'background-color: #34364F;';
     bottonColor[nu].style.cssText = 'transform: translateY(-100%);' + ' transition: 1s all;'+'background-color: #2C2C44;';
@@ -17,6 +23,10 @@ function origilColor(nu){
     topColor[nu].style.cssText = 'transform: translateY(0);' + ' transition: 0.8s all;'+'background-color: #2C2C44';
     bottonColor[nu].style.cssText = 'transform: translateY(0);' + ' transition: 0.8s all;'+'background-color: #34364F;';
 }
+
+// funtiones de time de countdown -----------------------------------------------------------------------------------------------
+
+
 const timeSegund = setInterval(()=>{
     cambioColor(3)
 },1000)

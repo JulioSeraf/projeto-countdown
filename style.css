@@ -131,18 +131,3 @@ h1{
         background-position: right;
     }
 }
-/* .hoja{
-    background-color:#34364F;
-    height: 50%;
-    border-radius: 10%;
-} */
-.bottom:hover{
-    transform: translateY(-100%);
-    background-color:#2C2C44 ;
-    transition: 1s all;
-}
-.top:hover{
-    transform: translateY(100%);
-    transition: 1s all;
-    background-color: #34364F;
-}
