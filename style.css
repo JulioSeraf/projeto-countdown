@@ -104,6 +104,18 @@ h1{
     background-size: cover;
     background-position: center;
 }
+.attribution .img{
+    display: inline-block;
+    position: sticky;
+    margin: 30px auto;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+.attribution img:hover{
+   
+   
+}
 .attribution div{
     width: 100%;
     color: rgba(255, 255, 255, 0.454);
