@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
    
 }
 body{
@@ -9,25 +9,54 @@ body{
     min-height: 100%;
     text-align: center;
     background-image: url(images/bg-stars.svg);
-    background-color: hsl(234, 17%, 12%);
+    background-color: #211D2B;
 }
 main{
-    height: 50vh;
+    position: relative;
+    height: 75vh;
 }
 
 h1{
+    position: absolute;
     margin:auto;
-    margin-top: 150px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
     width: 80%;
     color: white;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 4px;
 }
 #countdown{
-    border: 1px solid ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
     margin: auto;
-    width:clamp(350px,100%,900px);
+    width:clamp(350px,100%,700px);
     height: 80px;
     display: flex;
     justify-content: space-around;
+}
+.child .reloStyle{
+    position: absolute;
+    color: white;
+    font-size:2.5em;
+    transform: translate(-50%);
+    left: 50%;
+    top:23%;
+    font-weight: bolder;
+    opacity: 0.6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(218, 46, 46, 0.79);
+}
+@media screen and (min-width:700px) {
+    .child .reloStyle{
+        font-size: 3.5em;
+        top: 11%;
+    }
+
 }
 .child{
     position: relative;
@@ -37,21 +66,21 @@ h1{
 
 }
 .child .top{
-    background-color: blue;
+    background-color: #2C2C44;
     height:50%;
     border-radius: 10%;
 }
 .child .bottom{
-    background-color: red;
+    background-color:#34364F;
     height: 50%;
     border-radius: 10%;
 }
 .child .bol{
     position:absolute;
     top: 45%;
-    width: 7px;
+    width: 8px;
     height: 10px;
-    background-color: black;
+    background-color: #211D2B;
 }
 .child .bolLeft{
     border-radius: 0 10px 10px 0;
@@ -62,11 +91,34 @@ h1{
 }
 .child p{
     position: relative;
-    top: 1px;
+    top: 15px;
+    font-size: 0.8em;
+    color: #6a6499;
 }
 
 .attribution{
-    height: 30vh;
+    position: relative;
+    height: 25vh;
+    padding-top: 50px;
     background-image: url(images/pattern-hills.svg);
     background-size: cover;
+    background-position: center;
+}
+.attribution div{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.454);
+    font-size: 0.7em;
+    position: absolute;
+    bottom: 0%;
+
+}
+.attribution div a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+@media screen and (max-width:380px) {
+    .attribution{
+        background-position: right;
+    }
 }
