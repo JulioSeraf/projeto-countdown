@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+   
+}
+body{
+    width: 100vw;
+    min-height: 100%;
+    text-align: center;
+    background-image: url(images/bg-stars.svg);
+    background-color: hsl(234, 17%, 12%);
+}
+main{
+    height: 50vh;
+}
+
+h1{
+    margin:auto;
+    margin-top: 150px;
+    width: 80%;
+    color: white;
+}
+#countdown{
+    border: 1px solid ;
+    margin: auto;
+    width:clamp(350px,100%,900px);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.child{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    
+
+}
+.child .top{
+    background-color: blue;
+    height:50%;
+    border-radius: 10%;
+}
+.child .bottom{
+    background-color: red;
+    height: 50%;
+    border-radius: 10%;
+}
+.child .bol{
+    position:absolute;
+    top: 45%;
+    width: 7px;
+    height: 10px;
+    background-color: black;
+}
+.child .bolLeft{
+    border-radius: 0 10px 10px 0;
+}
+.child .bolRigth{
+    border-radius:10px 0 0 10px;
+    right: 0%;
+}
+.child p{
+    position: relative;
+    top: 1px;
+}
+
+.attribution{
+    height: 30vh;
+    background-image: url(images/pattern-hills.svg);
+    background-size: cover;
+}
