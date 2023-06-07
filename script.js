@@ -6,7 +6,7 @@ const topColor = document.querySelectorAll('.top');
 const bottonColor = document.querySelectorAll('.bottom');
 const number =document.querySelectorAll('.reloStyle');
 let segundTotal = 59;
-let minutesTotal = 9;
+let minutesTotal = 59;
 let hoursTotal = 23;
 let dayTotal = 8;
 function cambioColor(nu){
