@@ -50,7 +50,7 @@ h1{
     font-weight: bolder;
     opacity: 0.6;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgba(218, 46, 46, 0.79);
+    color: rgba(249, 21, 21, 0.847);
 }
 @media screen and (min-width:700px) {
     .child .reloStyle{
